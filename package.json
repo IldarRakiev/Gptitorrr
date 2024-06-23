@@ -1,10 +1,12 @@
 {
+  "homepage": "https://IldarRakiev.github.io/Gptitorrr",
   "name": "gptitor",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "vite",
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
